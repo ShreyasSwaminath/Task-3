@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Interactive Web Experience</h1>
+            <nav>
+                <ul>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#carousel">Carousel</a></li>
+                    <li><a href="#joke">Jokes</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="row">
+                <!-- Quiz Section -->
+                <section id="quiz" class="column">
+                    <h2>Interactive Quiz</h2>
+                    <div id="quiz-container">
+                        <div class="quiz-question" data-question="1">
+                            <p>1. Which is the Greatest Club in the world?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option" data-value="a">RealMadrid</div>
+                                <div class="quiz-option" data-value="b">Liverpool</div>
+                                <div class="quiz-option" data-value="c">A C Milan</div>
+                                <div class="quiz-option" data-value="d">Bayern Munich</div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question" data-question="2">
+                            <p>2.Who is the Greatest Player of Football?</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option" data-value="a">Lionel Messi</div>
+                                <div class="quiz-option" data-value="b">Cristiano Ronaldo</div>
+                                <div class="quiz-option" data-value="c">Pele</div>
+                                <div class="quiz-option" data-value="d">Diego Maradona</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="submit">Submit</button>
+                    <p id="quiz-result"></p>
+                </section>
+                
+                <!-- Joke API Section -->
+                <section id="joke" class="column">
+                    <h2>Random Joke</h2>
+                    <button id="get-joke">Get Joke</button>
+                    <div id="joke-container">Click the button to get a joke!</div>
+                </section>
+            </div>
+            
+            <!-- Carousel Section -->
+            <section id="carousel" class="carousel-section">
+                <h2>Image Carousel</h2>
+                <div class="carousel">
+                    <button class="carousel-button" id="prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-images">
+                        <!-- Updated Images -->
+                        <img src="Screenshot 2025-08-28 171543.png" class="carousel-image" alt="First Screenshot">
+                        <img src="Screenshot 2025-08-28 171630.png" class="carousel-image" alt="Second Screenshot">
+                        <img src="Screenshot 2025-08-28 172818.png" class="carousel-image" alt="Third Screenshot">
+                    </div>
+                    <button class="carousel-button" id="next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer Section -->
+        <footer>
+            <p>Let's connect</p>
+            <div class="footer-links">
+                <!-- Gmail -->
+                <a href="mailto:shreyasswaminath666@example.com" target="_blank">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/shreyas-swaminath-subramanian-117aa0303/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
